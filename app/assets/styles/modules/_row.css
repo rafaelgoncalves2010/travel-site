@@ -15,7 +15,10 @@
     }
 
     &__gutters_large > div{
+
+    	@mixin atSmall{
     	padding-right: 100px;
+    	}
     }
 
 	&__b_margin_until_medium{
