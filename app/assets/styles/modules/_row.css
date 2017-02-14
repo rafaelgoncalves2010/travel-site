@@ -5,9 +5,17 @@
 	&__gutters{
 		margin-right: -65px;
 	}
+	
+	&_gutters_large{
+		margin-right: -100px;
+	}
 
     &__gutters > div{
     	padding-right: 65px;
+    }
+
+    &__gutters_large > div{
+    	padding-right: 100px;
     }
 
 	&__b_margin_until_medium{
@@ -39,6 +47,11 @@
 	&__medium-8--smaller{
 		float: left;
 		width: 63%
+	}
+
+	&__medium_6{
+		width: 50%;
+		float: left;
 	}
 }
 
