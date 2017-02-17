@@ -1,6 +1,12 @@
 .row{
 
+
+
 	@mixin clearfix;
+
+	&__t-padding{
+		padding-top: 80px;
+	}
 
 	&__gutters{
 		margin-right: -65px;
@@ -8,6 +14,10 @@
 	
 	&_gutters_large{
 		margin-right: -100px;
+	}
+
+	&__gutters-small{
+		margin-right: -45px; 
 	}
 
     &__gutters > div{
@@ -19,6 +29,11 @@
     	@mixin atSmall{
     	padding-right: 100px;
     	}
+    }
+
+    &__gutters-small > div{
+    	padding-right: 45px;
+
     }
 
 	&__b_margin_until_medium{
@@ -58,5 +73,30 @@
 	}
 }
 
+/*Comeco das alturas iguais */
+
+&__equal-height-at-medium{
+	@mixin atMedium{
+		display: flex;
+
+	}
+
+	& > div{
+		float: none;
+		display: flex;
+	}
+}
+
+&__equal-height-at-large{
+	@mixin atLarge{
+		display: flex;
+
+	}
+
+	& > div{
+		float: none;
+		display: flex;
+	}
+}
 	
 }
